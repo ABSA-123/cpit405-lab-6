@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 6 - Like or Dislike</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Lab 6</h1>
+    <h2>Like or dislike</h2>
+
+    <div class="votes">
+      <button id="like-button" type="button" aria-pressed="false">
+        <span aria-hidden="true">👍</span> Like <span id="like-count">0</span>
+      </button>
+      <button id="dislike-button" type="button" aria-pressed="false">
+        <span aria-hidden="true">👎</span> Dislike <span id="dislike-count">0</span>
+      </button>
+    </div>
+
+    <h2><label for="comment-input">Comments</label></h2>
+    <form id="comment-form">
+      <textarea id="comment-input" placeholder="Write a comment..." maxlength="200" rows="5" required></textarea>
+      <div class="actions">
+        <button id="submit-button" type="submit">Submit</button>
+        <button id="reset-button" type="button">Reset</button>
+      </div>
+    </form>
+
+    <p id="message" role="status"></p>
+    <ul id="comments" aria-label="Submitted comments"></ul>
+    <noscript>Please enable JavaScript to vote and leave a comment.</noscript>
+  </main>
+</body>
+</html>
